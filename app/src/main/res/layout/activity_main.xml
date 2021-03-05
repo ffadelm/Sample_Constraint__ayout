@@ -83,7 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText3"
-        tools:background="#63B8F6"
+        app:backgroundTint="#63B8F6"
         tools:textColor="#ffffff" />
 
     <ImageView
