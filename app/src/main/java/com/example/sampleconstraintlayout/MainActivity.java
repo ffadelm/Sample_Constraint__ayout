@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                     );
                     builder.setIcon(R.drawable.ic_check);
                     builder.setTitle("Login Successfully");
-                    builder.setMessage("Welcome to Apps...");
+                    builder.setMessage("Welcome to Apps....");
 
                     builder.setNegativeButton("Yes", new DialogInterface.OnClickListener() {
                         @Override
