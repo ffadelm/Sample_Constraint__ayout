@@ -55,17 +55,17 @@ public class MainActivity extends AppCompatActivity {
                     alertDialog.show();
                 } else if (email.equals(mail) || pass.equals(sandi)) {
                     if (email.equals(mail)) {
-                        Toast ps = Toast.makeText(getApplicationContext(),
-                                "Invalid Password", Toast.LENGTH_SHORT);
-                        ps.show();
+                        Toast wrongPass = Toast.makeText(getApplicationContext(),
+                                "Invalid Password!!!", Toast.LENGTH_SHORT);
+                        wrongPass.show();
                     } else {
-                        Toast es = Toast.makeText(getApplicationContext(),
-                                "Invalid Email", Toast.LENGTH_LONG);
-                        es.show();
+                        Toast wrongEmail = Toast.makeText(getApplicationContext(),
+                                "Invalid Email!!!", Toast.LENGTH_LONG);
+                        wrongEmail.show();
                     }
                 } else {
                     Toast.makeText(getApplicationContext(),
-                            "Invalid Email and Password", Toast.LENGTH_LONG).show();
+                            "Invalid Email and Password !!!!", Toast.LENGTH_LONG).show();
                 }
             }
         });
