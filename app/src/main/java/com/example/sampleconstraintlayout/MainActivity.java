@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -38,22 +39,33 @@ public class MainActivity extends AppCompatActivity {
                 pass = edpassword.getText().toString();
 
                 if (email.equals(mail) && pass.equals(sandi)) {
+                    //membuat alert dialog
                     AlertDialog.Builder builder = new AlertDialog.Builder(
                             MainActivity.this
                     );
                     builder.setIcon(R.drawable.ic_check);
                     builder.setTitle("Login Successfully");
-                    builder.setMessage("Welcome to Apps....");
+                    builder.setMessage("Welcome to Apps, click Yes to continue");
 
+                    //ketika di klik YES maka akan diarahkan ke activity selanjutnya
                     builder.setNegativeButton("Yes", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
+                            //membuat objek bundle
+                            Bundle b = new Bundle();
+                            b.putString("e", email.trim());
+                            b.putString("p", pass.trim());
+                            //membuat intent untuk berpindah ke activity selanjutnya
+                            Intent i = new Intent(getApplicationContext(), ActHasil.class);
+                            i.putExtras(b);
+                            startActivity(i);
                         }
                     });
+                    //mengeksekusi alert dialog
                     AlertDialog alertDialog = builder.create();
                     alertDialog.show();
-                } else if (email.equals(mail) || pass.equals(sandi)) {
+                }
+                else if (email.equals(mail) || pass.equals(sandi)) {
                     if (email.equals(mail)) {
                         Toast wrongPass = Toast.makeText(getApplicationContext(),
                                 "Invalid Password!!!", Toast.LENGTH_SHORT);
@@ -63,7 +75,8 @@ public class MainActivity extends AppCompatActivity {
                                 "Invalid Email!!!", Toast.LENGTH_LONG);
                         wrongEmail.show();
                     }
-                } else {
+                }
+                else {
                     Toast.makeText(getApplicationContext(),
                             "Invalid Email and Password !!!!", Toast.LENGTH_LONG).show();
                 }

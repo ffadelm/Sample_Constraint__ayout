@@ -1,7 +1,13 @@
 <resources>
-    <string name="app_name">Sample Constraint Layout</string>
+    <string name="app_name">Intent and Passing Parameter </string>
     <string name="tEmail">email</string>
     <string name="tPassword">Password</string>
     <string name="bSignUp">Sign In</string>
     <string name="tLogin">You Dont Have Acount ? Sign Up</string>
+    <string name="tData">Data Anda</string>
+    <string name="txtEmail">Email: </string>
+    <string name="txtPass">Password: </string>
+    <string name="txemail">hasil Email</string>
+    <string name="txpass">hasil Password</string>
+    <string name="label2">Done Login</string>
 </resources>

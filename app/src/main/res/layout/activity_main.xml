@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e6efff"
     tools:context=".MainActivity">
 
     <EditText
@@ -11,8 +12,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
-        android:layout_marginEnd="92dp"
-        android:layout_marginRight="92dp"
         android:autofillHints="@string/tEmail"
         android:ems="10"
         android:fontFamily="@font/mmedium"
@@ -20,26 +19,30 @@
         android:inputType="textWebEmailAddress"
         android:padding="12dp"
         android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:background="#ffffff" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/edPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="92dp"
-        android:layout_marginRight="92dp"
         android:autofillHints="@string/tPassword"
         android:ems="10"
         android:fontFamily="@font/mmedium"
         android:hint="@string/tPassword"
         android:inputType="textPassword"
         android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/edEmail"
-        tools:background="#ffffff" />
+        app:layout_constraintVertical_bias="0.034" />
 
     <Button
         android:id="@+id/btLogin"
@@ -47,7 +50,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="80dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:fontFamily="@font/mmedium"
@@ -55,10 +57,12 @@
         android:paddingRight="30dp"
         android:text="@string/bSignUp"
         app:backgroundTint="#63B8F6"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.772"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edPassword"
+        app:layout_constraintVertical_bias="0.132"
         tools:textColor="#ffffff" />
 
     <ImageView
@@ -67,10 +71,12 @@
         android:layout_height="40dp"
         android:layout_marginTop="80dp"
         android:contentDescription="@string/app_name"
-        app:layout_constraintEnd_toStartOf="@+id/edEmail"
-        app:layout_constraintHorizontal_bias="0.745"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.221"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/email" />
 
     <ImageView
@@ -79,27 +85,28 @@
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:contentDescription="@string/app_name"
-        app:layout_constraintEnd_toStartOf="@+id/edPassword"
-        app:layout_constraintHorizontal_bias="0.745"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.031"
         app:srcCompat="@drawable/vpn_key" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
         android:fontFamily="@font/mlight"
         android:gravity="center"
         android:text="@string/tLogin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btLogin"
-        app:layout_constraintVertical_bias="0.0"
-
+        app:layout_constraintVertical_bias="0.31"
         tools:textColor="@color/black" />
 
     <ImageView
@@ -107,10 +114,12 @@
         android:layout_width="316dp"
         android:layout_height="230dp"
         android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011"
         app:srcCompat="@drawable/ic_come" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
