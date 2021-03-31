@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Intent and Passing Parameter </string>
+    <string name="app_name">Menu and Floating Button</string>
     <string name="tEmail">email</string>
     <string name="tPassword">Password</string>
     <string name="bSignUp">Sign In</string>
@@ -10,4 +10,11 @@
     <string name="txemail">hasil Email</string>
     <string name="txpass">hasil Password</string>
     <string name="label2">Done Login</string>
+    <string name="mDaftar">Pendaftaran</string>
+    <string name="ldaftar">Daftar</string>
+    <string name="enama">Masukkan Nama</string>
+    <string name="eemail">Masukkan Email</string>
+    <string name="epass">Masukkan Password</string>
+    <string name="erepass">Masukkan Password Kembali</string>
+    <string name="ealamat">Masukkan Alamat</string>
 </resources>
