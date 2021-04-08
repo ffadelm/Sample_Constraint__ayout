@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e6efff"
     tools:context=".LihatData">
 
     <TextView
@@ -17,7 +18,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.122" />
+        app:layout_constraintVertical_bias="0.122"
+        android:fontFamily="@font/mmedium"/>
 
     <TextView
         android:id="@+id/textView8"
@@ -30,7 +32,8 @@
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.08" />
+        app:layout_constraintVertical_bias="0.08"
+        android:fontFamily="@font/mmedium"/>
 
     <TextView
         android:id="@+id/tvNamaKontak"
@@ -44,7 +47,8 @@
         app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView7"
-        app:layout_constraintVertical_bias="0.165" />
+        app:layout_constraintVertical_bias="0.165"
+        android:fontFamily="@font/mmedium"/>
 
     <TextView
         android:id="@+id/textView10"
@@ -57,7 +61,8 @@
         app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView8"
-        app:layout_constraintVertical_bias="0.185" />
+        app:layout_constraintVertical_bias="0.185"
+        android:fontFamily="@font/mmedium"/>
 
     <TextView
         android:id="@+id/tvNomorTelepon"
@@ -71,5 +76,6 @@
         app:layout_constraintHorizontal_bias="0.228"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView10"
-        app:layout_constraintVertical_bias="0.041" />
+        app:layout_constraintVertical_bias="0.041"
+        android:fontFamily="@font/mmedium"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
