@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                             b.putString("e", email.trim());
                             b.putString("p", pass.trim());
                             //membuat intent untuk berpindah ke activity selanjutnya
-                            Intent i = new Intent(getApplicationContext(), ActHasil.class);
+                            Intent i = new Intent(getApplicationContext(), Home_activity.class);
                             i.putExtras(b);
                             startActivity(i);
                         }

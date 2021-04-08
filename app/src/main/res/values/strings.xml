@@ -1,15 +1,20 @@
 <resources>
-    <string name="app_name">Menu and Floating Button</string>
+    <!--  even button  -->
+    <string name="app_name">popup menu</string>
     <string name="tEmail">email</string>
     <string name="tPassword">Password</string>
     <string name="bSignUp">Sign In</string>
     <string name="tLogin">You Dont Have Acount ? Sign Up</string>
+
+    <!--  dua activity dan passing parameter   -->
     <string name="tData">Data Anda</string>
     <string name="txtEmail">Email: </string>
     <string name="txtPass">Password: </string>
     <string name="txemail">hasil Email</string>
     <string name="txpass">hasil Password</string>
     <string name="label2">Done Login</string>
+
+    <!--  menu dan Floating Button   -->
     <string name="mDaftar">Pendaftaran</string>
     <string name="ldaftar">Daftar</string>
     <string name="enama">Masukkan Nama</string>
@@ -17,4 +22,13 @@
     <string name="epass">Masukkan Password</string>
     <string name="erepass">Masukkan Password Kembali</string>
     <string name="ealamat">Masukkan Alamat</string>
+
+    <!--   Popup Menu dan ListView   -->
+    <string name="lihatdata">Lihat Data</string>
+    <string name="editdata">Edit Data</string>
+    <string name="datakontak">Data Kontak</string>
+    <string name="namaitem">Nama Item</string>
+    <string name="detailkontak">Detail Kontak</string>
+    <string name="nama">Nama</string>
+    <string name="notel">Nomor Telepon</string>
 </resources>
